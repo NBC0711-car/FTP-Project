@@ -1,0 +1,7 @@
+---
+- name: Configuración del Servidor FTP
+  hosts: ftp_servers
+  become: true  # Ejecutar como sudo
+  
+  roles:
+    - vsftpd
